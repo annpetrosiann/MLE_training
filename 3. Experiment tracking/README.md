@@ -146,19 +146,21 @@ In the MLflow UI, you will see two sections:
 1. Experiments
 2. Models
 
-<img width="1509" alt="Screenshot 2025-04-09 at 18 00 42" src="https://github.com/user-attachments/assets/5de0dd23-ba47-484a-a987-58689b72d3ad" />
+<img width="1509" alt="Screenshot 2025-04-09 at 18 00 42" src="https://github.com/user-attachments/assets/c29121e6-9a49-427f-b7ad-8dd2094acd47" />
 
 In the Experiments section, you can see some visualizations and compare models. The best-performing model so far is the lasso regression, which is why we've registered it as the best one. You can find this model in the Models section (see below).
 
-<img width="1501" alt="Screenshot 2025-04-09 at 18 00 57" src="https://github.com/user-attachments/assets/6e7ba61e-0dab-4215-8f3b-b766f2fb7f6f" />
+
+<img width="1501" alt="Screenshot 2025-04-09 at 18 00 57" src="https://github.com/user-attachments/assets/acbf95fa-ac43-4e11-b50f-fff1b4c9bd2b" />
 
 For data visualization, click on "Data Plots" and go to "Artifacts" where you will see some plots.
 
-<img width="487" alt="Screenshot 2025-04-09 at 18 02 30" src="https://github.com/user-attachments/assets/a5816484-f622-423a-84db-bc00b34a05f0" />
+<img width="487" alt="Screenshot 2025-04-09 at 18 02 30" src="https://github.com/user-attachments/assets/8d37d177-7fcb-4dab-abb8-51b184544637" />
 
 In the Models section, you can select any model and navigate to "Artifacts" to find sample data and model artifacts. Additionally, in the "Overview" tab, you can view its parameters, and on the "Metrics" page, you can review its metrics.
 
-<img width="1504" alt="Screenshot 2025-04-09 at 18 02 19" src="https://github.com/user-attachments/assets/625556c2-bb63-44b8-b4ad-09389c2dc58d" />
+
+<img width="1504" alt="Screenshot 2025-04-09 at 18 02 19" src="https://github.com/user-attachments/assets/bd889295-c1a2-40ba-8862-c884cbd6b611" />
 
 All models are reproducible, meaning that if you do not manually change the model's parameters, they will consistently produce the same metrics.
 
