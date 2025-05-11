@@ -1,0 +1,33 @@
+services:
+  # MLflow UI Service
+  mlflow-ui:
+    build:
+      context: .  # Points to root dir (where docker-compose.yml lives)
+      dockerfile: docker/MLflow/Dockerfile # Path to the Dockerfile
+    image: mlflow-ui:v1.0 # Name and tag of the image to be built
+    pull_policy: never
+    ports:
+      - "5005:5005" # Maps port 5005 on the host to port 5005 in the container
+    volumes:
+      - ./mlruns:/mlflow/mlruns # Maps the mlruns directory for MLflow tracking
+    restart: unless-stopped
+
+    # Command to start the MLflow server
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5005
+  
+  # Training Application Service
+  training-app:
+    build:
+      context: .  # Points to root dir (where docker-compose.yml lives)
+      dockerfile: docker/train/Dockerfile # Path to the Dockerfile
+    image: training-app:v1.0 # Name and tag of the image to be built
+    pull_policy: never
+    volumes:
+      - ./data:/app/data # Maps the data directory from the host to the container
+    depends_on:
+      - mlflow-ui # Ensures mlflow-ui service is started first
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-ui:5005 # Sets the MLflow tracking URI environment variable
