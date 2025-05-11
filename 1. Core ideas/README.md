@@ -16,18 +16,20 @@ VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterp
 After downloading the installer, follow these steps to install VirtualBox:
 
 1. **Launch the Installer**: Double-click on the `VirtualBox.pkg` file to start the installation process.
-<img width="644" alt="Screenshot 2025-03-22 at 12 02 31" src="https://github.com/user-attachments/assets/e09a7965-ecc1-46f3-99e0-80832cefd2f1" />
+<img width="644" alt="Screenshot 2025-03-22 at 12 02 31" src="https://github.com/user-attachments/assets/60719658-2d7d-4b89-ad0f-c18f97ad97c2" />
 
 
 2. **Run the Installation Wizard**: The installer will guide you through the necessary steps to install VirtualBox on your system. Follow the prompts in the installation wizard.
 
-<img width="614" alt="Screenshot 2025-03-22 at 12 03 31" src="https://github.com/user-attachments/assets/f2c2c2c1-484d-42b4-9571-4df2ed93d94b" />
+<img width="614" alt="Screenshot 2025-03-22 at 12 03 31" src="https://github.com/user-attachments/assets/0a6d376c-502d-4709-83f0-2997f56f56ac" />
 
 3. **Completing the Installation**: Once the installation is complete, you will see a confirmation screen indicating that VirtualBox has been successfully installed.
-<img width="638" alt="Screenshot 2025-03-22 at 12 04 09" src="https://github.com/user-attachments/assets/528d9ffa-ce33-489c-862d-29d20fbdf077" />
+
+<img width="638" alt="Screenshot 2025-03-22 at 12 04 09" src="https://github.com/user-attachments/assets/85c677ac-06a0-40df-8131-d8f8c2518945" />
 
 4. **Launch VirtualBox**: Open the `Applications` folder and double-click on the VirtualBox icon to run it. When you launch VirtualBox for the first time, you might be prompted to choose between `Basic` and `Expert` modes, depending on your preference and experience level.
-<img width="691" alt="Screenshot 2025-03-22 at 12 06 14" src="https://github.com/user-attachments/assets/eba3a0e4-2307-4917-9c72-e1f6ccf5f5df" />
+
+<img width="691" alt="Screenshot 2025-03-22 at 12 06 14" src="https://github.com/user-attachments/assets/354eba7f-1089-4159-8966-6820eca1e725" />
 
 Now that you have VirtualBox installed, you can proceed to create and manage your virtual machines. 
 ## 2. Ubuntu
@@ -48,11 +50,12 @@ Ubuntu is a popular Linux distribution based on Debian. It is mostly composed of
 **3. Install Ubuntu**: Set the name as "Ubuntu" and adjust the memory and disk settings according to your preference.  Attach the downloaded ISO file to the VM and follow the installation prompts.
 Once installation is complete, you can start using Ubuntu within VirtualBox.
 
-<img width="938" alt="Screenshot 2025-03-22 at 14 02 11" src="https://github.com/user-attachments/assets/d3b97238-cbb4-49b3-acb6-c605fef0c8ae" />
-<img width="944" alt="Screenshot 2025-03-22 at 14 02 33" src="https://github.com/user-attachments/assets/38495130-c963-4034-b774-2e79857a935c" />
-<img width="948" alt="Screenshot 2025-03-22 at 14 02 46" src="https://github.com/user-attachments/assets/66747441-d8cf-4d14-aef2-c2b94089ff8d" />
-<img width="944" alt="Screenshot 2025-03-22 at 14 02 51" src="https://github.com/user-attachments/assets/0f0ed82e-fa5a-4c6d-802e-81284f1c6ace" />
-<img width="981" alt="Screenshot 2025-03-23 at 14 51 10" src="https://github.com/user-attachments/assets/301da6e9-54d7-44f7-addc-b1d47199060f" />
+<img width="938" alt="Screenshot 2025-03-22 at 14 02 11" src="https://github.com/user-attachments/assets/35b445c9-b7bd-4f19-bb81-91cbba58fd67" />
+<img width="944" alt="Screenshot 2025-03-22 at 14 02 33" src="https://github.com/user-attachments/assets/a9f1620a-5604-4dba-aa3a-0292e44d9af0" />
+<img width="948" alt="Screenshot 2025-03-22 at 14 02 46" src="https://github.com/user-attachments/assets/01358634-9edd-47fb-8368-e97f23d31836" />
+<img width="944" alt="Screenshot 2025-03-22 at 14 02 51" src="https://github.com/user-attachments/assets/e7819a8a-0c41-4194-9021-2682c2d167f4" />
+<img width="981" alt="Screenshot 2025-03-23 at 14 51 10" src="https://github.com/user-attachments/assets/5a4c2dae-8e93-4702-a77d-a4251b28a137" />
+
 
 After successfully installing Ubuntu, follow these steps to start using your system.
 
@@ -60,13 +63,13 @@ After successfully installing Ubuntu, follow these steps to start using your sys
 
 Start VirtualBox and select your Ubuntu virtual machine.  Click on the "Start" button to boot into Ubuntu.
 
-<img width="977" alt="Screenshot 2025-03-23 at 15 04 01" src="https://github.com/user-attachments/assets/8f762f8b-48c9-45c8-bd80-c521ff82d7f9" />
+<img width="977" alt="Screenshot 2025-03-23 at 15 04 01" src="https://github.com/user-attachments/assets/4ccacb94-fdaf-4d47-8c46-58a627bf9c99" />
 
 ### 2. Booting from the Installation Media
 
 When you start your virtual machine, you will first see the GNU GRUB screen. From here, select "Try or Install Ubuntu Server" to proceed with the installation.
 
-<img width="694" alt="Screenshot 2025-03-22 at 14 05 45" src="https://github.com/user-attachments/assets/714a9014-030f-47dd-85c9-675ea022e7cb" />
+<img width="694" alt="Screenshot 2025-03-22 at 14 05 45" src="https://github.com/user-attachments/assets/2bc7c195-3f79-4cde-a019-c374bae4a5f9" />
 
 ### 3. Configuring Your User Profile
 
@@ -74,25 +77,26 @@ During the installation process, you'll be asked to create a user account. This 
   - Your full name
   - Your desired username
   - A strong password and confirm it
-<img width="865" alt="Screenshot 2025-03-22 at 14 32 37" src="https://github.com/user-attachments/assets/79bde00e-3e39-49e8-801a-8720bb6117d0" />
+<img width="865" alt="Screenshot 2025-03-22 at 14 32 37" src="https://github.com/user-attachments/assets/0eabbe99-9591-4e68-8ab2-b21f0a4c8f45" />
 
   It's recommended to have the same name and username. 
 
 ### 4. Installation System
 After that, you need to wait for the system to complete the installation and updates, then reboot it.
 
-<img width="862" alt="Screenshot 2025-03-22 at 14 32 54" src="https://github.com/user-attachments/assets/ed092f20-b55c-4711-a6eb-2b44acc2f687" />
-<img width="860" alt="Screenshot 2025-03-22 at 14 36 32" src="https://github.com/user-attachments/assets/6f8f9896-f8bd-4b9c-a94e-634f94975659" />
+<img width="862" alt="Screenshot 2025-03-22 at 14 32 54" src="https://github.com/user-attachments/assets/928d67fd-0ec2-4669-9139-b2c75f1ba89c" />
+<img width="860" alt="Screenshot 2025-03-22 at 14 36 32" src="https://github.com/user-attachments/assets/74f7929b-e869-4a98-8028-b0bfa7efc321" />
+
 
 ### 5. Log into Ubuntu
 At the login screen, enter the username and password you created during the installation process.
 
-<img width="1040" alt="Screenshot 2025-03-23 at 15 29 03" src="https://github.com/user-attachments/assets/ee08b673-5a84-4242-9fe0-16714ab82a60" />
+<img width="1040" alt="Screenshot 2025-03-23 at 15 29 03" src="https://github.com/user-attachments/assets/761a0c70-9360-460d-9c85-4de59f1e3784" />
 
 ### 6. Exploring the Ubuntu Desktop
 Once logged in, you'll be presented with the Ubuntu Desktop environment. You can begin exploring or installing additional software as needed.
 
-<img width="1051" alt="Screenshot 2025-03-23 at 00 04 26" src="https://github.com/user-attachments/assets/8a296712-6f07-4005-b6a6-a6b4c538acdb" />
+<img width="1051" alt="Screenshot 2025-03-23 at 00 04 26" src="https://github.com/user-attachments/assets/5400eb21-b0cf-48dd-ae8d-4e6e8e5b259b" />
 
 ### Updating and Upgrading
 
@@ -127,7 +131,6 @@ Docker is a set of platform-as-a-service products that use OS-level virtualizati
 ```bash
      sudo docker-compose --version
 ```
-<img width="403" alt="Screenshot 2025-03-23 at 15 30 18" src="https://github.com/user-attachments/assets/a8149e64-a4aa-4fe9-8a57-a3c8a8505afb" />
 
 To manage **Docker without having to prepend sudo to every command**, you can add your user to the Docker group. This allows your user to execute Docker commands without needing superuser privileges. Here's how you can do it:
 
