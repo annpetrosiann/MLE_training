@@ -55,21 +55,23 @@ After running the command, you’ll see a link to the Airflow UI. When you open 
 - Username: anahit
 - Password: epam123
 
-<img width="1506" alt="Screenshot 2025-04-18 at 10 41 42" src="https://github.com/user-attachments/assets/ac92d856-7035-431f-a2cc-e5509f32fcde" />
+<img width="1506" alt="Screenshot 2025-04-18 at 10 41 42" src="https://github.com/user-attachments/assets/063723b4-073f-43e0-b8e5-72190fdc1743" />
+
 
 Once you're logged in, you’ll see the `data_preprocessing_pipeline`  listed on the homepage. You can trigger it from there to start the pipeline.
 
-<img width="1507" alt="Screenshot 2025-04-18 at 10 41 59" src="https://github.com/user-attachments/assets/a18823a3-11eb-44c0-8bad-b997ee259c3d" />
+<img width="1507" alt="Screenshot 2025-04-18 at 10 41 59" src="https://github.com/user-attachments/assets/3540ad7a-c9f6-4f91-aaa5-e199cc265c3a" />
 
 The tasks will be queued and then executed in order. Once completed successfully, they will be marked as green (success).
 
-<img width="1506" alt="Screenshot 2025-04-18 at 11 13 28" src="https://github.com/user-attachments/assets/71c0bdc5-035b-47cc-a892-5f3e4b328f30" />
-<img width="1475" alt="Screenshot 2025-04-18 at 11 13 37" src="https://github.com/user-attachments/assets/fbe6976d-8806-499e-b22a-7f913a3dbe52" />
+<img width="1506" alt="Screenshot 2025-04-18 at 11 13 28" src="https://github.com/user-attachments/assets/ed68f019-38ca-4884-a24f-b9defc3539df" />
+<img width="1475" alt="Screenshot 2025-04-18 at 11 13 37" src="https://github.com/user-attachments/assets/f5a352ee-782d-4951-bf19-3ee8b480edcb" />
 
 You can explore more by clicking on the DAG
 
-<img width="1497" alt="Screenshot 2025-04-18 at 11 13 54" src="https://github.com/user-attachments/assets/73046054-70f5-4a70-a5cf-f2feffe719ff" />
-<img width="874" alt="Screenshot 2025-04-18 at 11 14 29" src="https://github.com/user-attachments/assets/fbb61d7e-f690-4835-84af-b7f9057b252f" />
+
+<img width="1497" alt="Screenshot 2025-04-18 at 11 13 54" src="https://github.com/user-attachments/assets/d94453bf-bc1e-42f5-9d5f-ea25a02384a1" />
+<img width="874" alt="Screenshot 2025-04-18 at 11 14 29" src="https://github.com/user-attachments/assets/cc0df7ad-7777-4b49-b8f3-1301e9dddfe4" />
 
 
 You'll find views like:
