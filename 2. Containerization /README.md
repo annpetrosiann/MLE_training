@@ -16,7 +16,7 @@ This project demonstrates setting up a Docker-based environment for training and
 ├── inference                 # Script and Dockerfiles used for inference
 │   ├── Dockerfile
 │   ├── inference.py
-├── saves_model               # Folder where trained model are stored (it can be uploaded with train.py script)
+├── saved_model               # Folder where trained model are stored (it can be uploaded with train.py script)
 │   └── model.joblib
 ├── requirements.txt          # List of dependencies required to run the project.
 └── README.md
