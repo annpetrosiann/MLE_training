@@ -4,19 +4,19 @@ This project demonstrates setting up a Docker-based environment for training and
 
 ## Project Structure
 ```
-├── data                      # Data files used for training and inference (it can be uploaded with data_upload.py script)
+├── data/                      # Data files used for training and inference (it can be uploaded with data_upload.py script)
 │   ├── train.csv
 │   └── test.csv
-├── data_process              # Script used for data processing
+├── data_process/              # Script used for data processing
 │   ├── Dockerfile
 │   ├── data_upload.py  
-├── train                     # Script and Dockerfile used for training
+├── train/                     # Script and Dockerfile used for training
 │   ├── Dockerfile
 │   ├── train.py     
-├── inference                 # Script and Dockerfiles used for inference
+├── inference/                 # Script and Dockerfiles used for inference
 │   ├── Dockerfile
 │   ├── inference.py
-├── saved_model               # Folder where trained model are stored (it can be uploaded with train.py script)
+├── saved_model/               # Folder where trained model are stored (it can be uploaded with train.py script)
 │   └── model.joblib
 ├── requirements.txt          # List of dependencies required to run the project.
 └── README.md
