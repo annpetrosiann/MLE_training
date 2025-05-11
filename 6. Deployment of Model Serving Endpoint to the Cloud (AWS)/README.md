@@ -54,8 +54,9 @@ After running a command, you might see the following message:
 
 If you're new and don't have any credentials yet, you'll need to generate access keys from the AWS Management Console(see below):
 
-<img width="1196" alt="key1" src="https://github.com/user-attachments/assets/d2f96093-6f8c-479f-9d1c-70aa66ca8c93" />
-<img width="1196" alt="key2" src="https://github.com/user-attachments/assets/67a22d03-3098-4a89-9328-db7a3aa855cd" />
+
+<img width="1196" alt="key1" src="https://github.com/user-attachments/assets/b1d08aba-e39f-4f22-9442-58deea8cf126" />
+<img width="1196" alt="key2" src="https://github.com/user-attachments/assets/12f220e6-50be-426e-924d-68f6c4053144" />
 
 Then, configure AWS CLI by running:
 ```bash
@@ -67,12 +68,12 @@ You'll be prompted to enter AWS Access Key ID, AWS Secret Access Key, Default re
 
 Before proceeding, we need to create a repository.
 
-![repo1](https://github.com/user-attachments/assets/a74237e9-db3e-4859-9680-fda4d679d295)
-![repo2](https://github.com/user-attachments/assets/8cd9ef31-c6a5-4c96-98eb-533a8018f08b)
+![repo1 23 55 15](https://github.com/user-attachments/assets/68090940-3729-4f5a-b2c1-2a45a08a6249)
+![repo2 23 55 15](https://github.com/user-attachments/assets/437a6b05-e8f1-44f6-8804-7a7a2ac3e663)
 
 Once the repository is created, click on it to open. It will initially be empty.
 
-<img width="1211" alt="image1" src="https://github.com/user-attachments/assets/cc6f99d1-4312-49eb-86d5-e4ac4c7175f6" />
+<img width="1211" alt="image1" src="https://github.com/user-attachments/assets/bfecf31d-a5b9-499c-8da2-3af0615089ed" />
 
 ### Step 3: Push Docker Image to ECR
 Run the following commands to upload Docker image, then refresh the page:
@@ -88,7 +89,8 @@ docker push <your-account-id>.dkr.ecr.<your-region>.amazonaws.com/<repo-name>:la
 ````
 After the push completes, refresh the repository page. You should now see image listed there.
 
-![image2](https://github.com/user-attachments/assets/a2723b6c-26c9-49e1-bc80-7b7562586362)
+
+![image2 23 55 15](https://github.com/user-attachments/assets/01e55faa-7aa8-4690-adc9-1cdaa81e7c54)
 
 ---
 
@@ -98,27 +100,29 @@ From the `Amazon SageMaker` console, go to `Models` and click Create model.
 For **Location of inference code image**, provide the **Docker image URI**
 (found under ECR repository → Images → Image URI).
 
-![model1](https://github.com/user-attachments/assets/875c3c00-989d-4925-b3fd-9d54befe676d)
-![model2](https://github.com/user-attachments/assets/0879cf99-a0e2-499f-8883-cbae4180ad59)
+![model1 23 55 15](https://github.com/user-attachments/assets/e0bdb584-1246-4833-847c-4b73eba380f5)
+![model2 23 55 15](https://github.com/user-attachments/assets/64dc045d-023e-45fe-8322-1a286cc8223d)
 
 
 After creating the model, you need to create an `endpoint configuration` and select the model you just created.
 
-![endpoint_config](https://github.com/user-attachments/assets/14d21ddb-0474-47e4-9480-9b83a1cec323)
-
+![endpoint_config 23 55 15](https://github.com/user-attachments/assets/bd8af4ae-203d-456b-bb22-ea83b51e6bc5)
 
 Once the endpoint configuration is created, go to `Endpoints`, click **Create**, select **Use existing endpoint configuration**, choose the one you just created, and then click **Create**. It will take a few moments for the endpoint status to change to `InService`.  
 
-![endpoint1](https://github.com/user-attachments/assets/a73b6327-4bbd-453a-b105-6ad7ea81f0f1)
+![endpoint1 23 55 15](https://github.com/user-attachments/assets/347e6627-8f9b-4c59-ac6d-6974c4e04ddf)
+
 
 Once it’s active, you can go to the terminal and run `test.py`.
 You will see the prediction printed in the console.
-![test](https://github.com/user-attachments/assets/e13a37d3-da9b-441b-a4de-059d5dfb0459)
+
+![test 23 55 15](https://github.com/user-attachments/assets/238d3b7f-ac54-4180-a4c8-b8967a890b15)
 
 
 *Note: `\ud83c\udf38` is just an emoji that can't be displayed properly in the terminal —ignore it.*
 
-![endpoint2](https://github.com/user-attachments/assets/123a3b78-4a3b-45a4-bc6d-8c3ef571f891)
+![endpoint2 23 55 15](https://github.com/user-attachments/assets/9c805dcc-be9f-47d0-a653-a636a76e705e)
+
 
 
 The endpoint `sagemaker-inference-endpoint` is now InService, meaning it’s ready to receive requests. You can view the model container logs by clicking the link under `Model container logs`. The endpoint currently shows **0 alarms**, indicating it is running without any issues. 
