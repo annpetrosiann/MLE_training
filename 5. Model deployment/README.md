@@ -70,8 +70,9 @@ You can access it with provided UI.
   -d '{"feature1": 5.1, "feature2": 3.5, "feature3": 1.4, "feature4": 0.2}'
   ```
 Or use the built-in web UI to input features and get predictions. Results will be shown as class labels (see below).
-![Untitled design](https://github.com/user-attachments/assets/70ef1005-b250-420d-bc06-c58c8fc4d82e)
 
+
+![Untitled design](https://github.com/user-attachments/assets/b2e8f035-92c1-45c7-b421-36f47bf83d93)
 
 ## 📦 Batch Prediction
 Run the full batch pipeline:
