@@ -8,6 +8,7 @@ This project demonstrates setting up a Docker-based environment for training and
 │   ├── train.csv
 │   └── test.csv
 ├── data_process              # Script used for data processing
+│   ├── Dockerfile
 │   ├── data_upload.py  
 ├── train                     # Script and Dockerfile used for training
 │   ├── Dockerfile
