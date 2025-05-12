@@ -1,0 +1,63 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: /usr/local/bin/python3 scripts/preprocess_data.py
+    deps:
+    - path: data/raw/winequality-red.csv
+      hash: md5
+      md5: 2daeecee174368f8a33b82c8cccae3a5
+      size: 84199
+    - path: scripts/preprocess_data.py
+      hash: md5
+      md5: c500d17fe7ed2bcac8855ee58dee7508
+      size: 805
+    outs:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 017261d721aba443d2095f5db1be73bf
+      size: 59061
+    - path: data/processed/train.csv
+      hash: md5
+      md5: f0a6bfc722ccb549486a52152c17a9ef
+      size: 235303
+  visualize:
+    cmd: /usr/local/bin/python3 scripts/visualize_data.py
+    deps:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 017261d721aba443d2095f5db1be73bf
+      size: 59061
+    - path: data/processed/train.csv
+      hash: md5
+      md5: f0a6bfc722ccb549486a52152c17a9ef
+      size: 235303
+    - path: scripts/visualize_data.py
+      hash: md5
+      md5: b8f9d888f4d0b265b69e8cbeaadc68ab
+      size: 1269
+    outs:
+    - path: data/plots/
+      hash: md5
+      md5: b37b486e9422657f91d0e10c81ba12c8.dir
+      size: 234442
+      nfiles: 4
+  train:
+    cmd: /usr/local/bin/python3 scripts/train.py
+    deps:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 017261d721aba443d2095f5db1be73bf
+      size: 59061
+    - path: data/processed/train.csv
+      hash: md5
+      md5: f0a6bfc722ccb549486a52152c17a9ef
+      size: 235303
+    - path: scripts/train.py
+      hash: md5
+      md5: 2fc965e70a6305ea47ce0c3feb0f1f1f
+      size: 1030
+    outs:
+    - path: metrics/metrics.json
+      hash: md5
+      md5: fa35ae5ff31f3f82754793a43d273eba
+      size: 96

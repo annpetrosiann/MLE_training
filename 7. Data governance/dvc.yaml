@@ -1,0 +1,27 @@
+stages:
+  preprocess:
+    cmd: /usr/local/bin/python3 scripts/preprocess_data.py
+    deps:
+      - scripts/preprocess_data.py
+      - data/raw/winequality-red.csv
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+
+  visualize:
+    cmd: /usr/local/bin/python3 scripts/visualize_data.py
+    deps:
+      - scripts/visualize_data.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    outs:
+      - data/plots/
+  train:
+    cmd: /usr/local/bin/python3 scripts/train.py
+    deps:
+      - scripts/train.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+    metrics:
+      - metrics/metrics.json:
+          cache: false
